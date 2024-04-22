@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculate Screen Size</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1>画面サイズ計算ツール</h1>
+        <p></p>
+        <p id="result">2</p>
+        <div class="gene-btn" onclick="calculate()">calculate</div>
+        <div class="copy-btn" onclick="copyToClipboard()">コピー</div>
+
+        <br>
+        <h2>設定</h2>
+        <hr>
+
+        <form class="checkbox" name="settings">
+            <p>
+                文字数
+                <input type="number" value="10" inputmode="numeric" id="screen-size" onchange="calculate()">
+            </p>
+        </form>
+        
+        <br>
+
+        <div>
+            <h2>注意事項</h2>
+            <hr>
+            <p>使用する際は自己責任でお願いいたします。</p>
+            <p>このサイトの中身はこちら</p>
+            <a href="https://github.com/yananananarn/calculate-screen-size">
+                <img src="https://github.com/yananananarn/calculate-screen-size.svg">
+            </a>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>
