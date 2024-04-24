@@ -28,6 +28,15 @@
                  : 
                 <input type="number" value="9" inputmode="numeric" id="aspect_h" onchange="calculate()">
             </p>
+            <p>
+                <select id="aspect" onchange="setAspect()">
+                    <option value="16:9" selected>16:9 (地上波デジタル放送、Youtube)</option>
+                    <option value="16:10">16:10</option>
+                    <option value="21:9">21:9 (ウルトラワイドモニター)</option>
+                    <option value="4:3">4:3 (従来の地上波TV、DVD)</option>
+                    <option value="2.35:1">2.35:1 (シネマスコープ)</option>
+                </select>
+            </p>
         </form>
         
         <br>

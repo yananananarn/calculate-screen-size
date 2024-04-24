@@ -23,5 +23,8 @@ function calculate() {
 }
 
 function setAspect() {
+    const preset_aspect = document.getElementById("aspect").value.split(":");
 
+    con_aspect_w.value = preset_aspect[0];
+    con_aspect_h.value = preset_aspect[1];
 }
