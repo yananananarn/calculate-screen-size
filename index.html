@@ -8,7 +8,8 @@
     <body>
         <h1>画面サイズ計算ツール</h1>
         <p></p>
-        <p id="result">2</p>
+        <p>Wide   : <span id="cm_w">-</span>cm</p>
+        <p>Height : <span id="cm_h">-</span>cm</p>
         <div class="gene-btn" onclick="calculate()">calculate</div>
         <div class="copy-btn" onclick="copyToClipboard()">コピー</div>
 
@@ -18,7 +19,7 @@
 
         <form class="checkbox" name="settings">
             <p>
-                文字数
+                インチ数
                 <input type="number" value="10" inputmode="numeric" id="screen-size" onchange="calculate()">
             </p>
         </form>
